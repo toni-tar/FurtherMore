@@ -7,6 +7,11 @@ TagManager:
   - Barrier
   - Floar
   - '?'
+  - Height
+  - Small
+  - lol...
+  - Destroyer
+  - Door
   layers:
   - Default
   - TransparentFX
