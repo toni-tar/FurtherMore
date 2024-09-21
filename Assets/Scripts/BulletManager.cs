@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class BulletManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject bullet;
+     public Transform[] bullets;
 
-    // Update is called once per frame
-    void Update()
+   private void Start()
     {
-        
+     foreach (Transform weaponShels in bullets)
+        {
+            StartCoroutine(SpawnObject(weaponShels));
+        } 
+            
     }
+   private IEnumerator SpawnObject(Transform weaponShels)
+    {
+        while (true)
+        { 
+
+        Instantiate(bullet, weaponShels.position,weaponShels.rotation);
+            yield return new WaitForSeconds(2);
+
+                }
+    } 
+
+        
+    
+
 }

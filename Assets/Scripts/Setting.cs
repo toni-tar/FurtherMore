@@ -29,6 +29,25 @@ public class Setting : MonoBehaviour
             transform.localScale += new Vector3(0.4f, 0.4f, 0.4f);
             Destroy(collision.gameObject);
         }
+
+        if (collision.gameObject.CompareTag("?"))
+        {
+            int random = Random.Range(0, 1);
+
+            int randomSize = Random.Range(-2, 2);
+            if (random == 0)
+            {
+                transform.localScale += new Vector3(randomSize, randomSize, randomSize);
+
+            }
+
+            else if (random == 1)
+            {
+                transform.localScale -= new Vector3(randomSize, randomSize, randomSize);
+
+            }
+            Destroy(collision.gameObject);
+        }
     }
         
     }

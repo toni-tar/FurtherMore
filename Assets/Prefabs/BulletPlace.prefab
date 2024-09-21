@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7696859569975778422, guid: a9f3fc305b9080f45a2688a2caf020b1, type: 3}
       propertyPath: m_Name
-      value: weapon_shells (1) Variant
+      value: BulletPlace
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
